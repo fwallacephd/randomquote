@@ -1,0 +1,39 @@
+/*OVERALL*/
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body {
+    background: ;
+
+}
+
+.section-quotes {
+    background-color:
+    width: 33%;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: ;
+    border-style: ;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: auto;
+    color:
+
+}
+
+.quote {
+    font-size: 30px;
+}
+
+.character {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.btn {
+    text-align: center;
+}
