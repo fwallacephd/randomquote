@@ -10,9 +10,13 @@ function genQuote() {
 
 function shareTweet(){
     window.open("https://twitter.com/intent/tweet");
+    const quoteText = document.getElementById('quote-text').innerHTML;
+    const tweetButton = document.getElementById('tweet-button');
+
+    tweetButton.onclick(function () {
+    const escapedText = encodeURIComponent(quoteText);
+    window.location = 'https://twitter.com/intent/tweet?text=' + escapedText;
+});
 
 }
 
- $("#tweet").on("click", function(){
-        window.open("https://twitter.com/intent/tweet?text="+randomQuote + " " + "-"+author);
-        });
