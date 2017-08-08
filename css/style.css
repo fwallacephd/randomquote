@@ -19,8 +19,7 @@ body {
 .tag-line {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 30px;
-    line-height: 10px;
-    color: #FFD700;
+    color: #ffd700;
 }
 
 #cast-image {
@@ -60,4 +59,16 @@ body {
     font-family: 'Saira Condensed', sans-serif;
     text-align: center;
     font-size: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: #4099FF;
+}
+
+.gold {
+    color: #FFD700;
 }
