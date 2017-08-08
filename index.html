@@ -21,9 +21,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link href="#" rel="stylesheet">
-
-    <link href="#" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Saira+Condensed:400,600,700" rel="stylesheet">
 
     <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
 
@@ -36,21 +34,18 @@
     <div class="container-fluid">
         <div class="row"><!--Row Title-->
             <div class="col-md-12 text-center">
-                <h1>Browncoats Unite!</h1>
-                <h2>A Firefly & Serenity Quote Generator</h2>
+                <h1 class="title">Browncoats Unite!</h1>
+                <h3 class="tag-line">A Firefly & Serenity Quote Generator</h3>
+                <br>
             </div><!--END Title Column-->
         </div><!--END Title Row-->
         <div class="row"><!--Row Images-->
-            <div class="col-md-4 img-responsive text-center">
-                Image
+           <div class="col-md-2"></div>
+            <div class="col-md-8 img-responsive text-center">
+                <img id="cast-image" class="img-resonsive center-block" src="images/serenitycast1.jpg" alt="Serenity Cast">
+                <p class="cast">In photo: Jayne, Kaylee, Book, Simon, Inara, Mal, Zoe, Wash, and River.</p>
             </div>
-            <div class="col-md-4 img-responsive text-center">
-                Image
-            </div>
-            <div class="col-md-4 img-responsive text-center">
-                Image
-            </div>
-            <br>
+            <div class="col-md-2"></div>
         </div><!--END Row Images-->
     </div><!--END Section Container-->
 </section><!--END Section Header-->
@@ -58,17 +53,19 @@
 <section class="main">
     <div class="container-fluid">
     <div class="section-quotes text-center">
-        <span id="newquote" class="quote">
+        <span id="newQuote" class="quote">
         Shiny, Captain.
         </span><!--END Quotes-->
         <br>
-        <span id="newcharacter" class="character">
+        <span id="newCharacter" class="character">
         -Kaylee
         </span><!--END Character-->
+        <br>
     </div><!--END Section-Quotes-->
         <div class="row"><!--Row Button & Quotes-->
             <div class="col-md-12">
-                <button onclick="genQuote()" class="btn btn-default center-block" type="Submit">Shiny New Quote</button>
+               <br>
+                <button onClick="genQuote()" class="btn btn-default center-block" type="Submit">Shiny New Quote</button>
             </div><!--END Column Button & Qu otes-->
         </div><!--END Row Button & Qutoes-->
     </div><!--END Main Container-->

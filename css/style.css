@@ -1,39 +1,63 @@
 /*OVERALL*/
-* {
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-     box-sizing: border-box;
+body {
+     background-image: url('../images/starbackground2.jpg');
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height:100%;
+    color: white;
 }
 
-body {
-    background: ;
+.title {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
 
+.tag-line {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+    line-height: 10px;
+    color: #FFD700;
+}
+
+#cast-image {
+    max-width: 60%;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.cast {
+    font-family: 'Saira Condensed', sans-serif;
+    color: #FFD700;
+    font-size: 20px;
+    text-align: center;
 }
 
 .section-quotes {
+    font-family: 'Saira Condensed', sans-serif;
     background-color:
     width: 33%;
-    margin-right: auto;
-    margin-left: auto;
-    border-color: ;
-    border-style: ;
-    border-radius: 5px;
-    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
     height: auto;
-    color:
-
 }
 
 .quote {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .character {
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
+    color: #FFD700;
 }
 
 .btn {
+    font-family: 'Saira Condensed', sans-serif;
     text-align: center;
+    font-size: 20px;
 }
