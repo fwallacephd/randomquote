@@ -6,17 +6,23 @@ function genQuote() {
     var randomNum = Math.floor(Math.random() * quote.length);
     document.getElementById('newQuote').innerHTML = quote[randomNum];
     document.getElementById('newCharacter').innerHTML = character[randomNum];
+
+    return quote[randomNum]
 }
 
 function shareTweet(){
-    window.open("https://twitter.com/intent/tweet");
-    const quoteText = document.getElementById('quote-text').innerHTML;
+    var quote = genQuote();
+    window.open("https://twitter.com/intent/tweet?text=" + quote);
+    const quoteText = document.getElementById('newQuote').innerHTML;
     const tweetButton = document.getElementById('tweet-button');
 
-    tweetButton.onclick(function () {
+    tweetButton.onclick(function (event) {
+        event.preventDefault();
     const escapedText = encodeURIComponent(quoteText);
-    window.location = 'https://twitter.com/intent/tweet?text=' + escapedText;
+
 });
 
 }
+
+$("#tweet-button").on('click', shareTweet);
 
