@@ -13,6 +13,8 @@
     <meta name="description" content="A Firefly & Serentiy Quote Generator."/>
 
     <title>Firefly & Serenity Quote Generator</title>
+        <script text="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
 
     <!-- Bootstrap, Animate.css, Font Awesome, CSS -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
@@ -65,9 +67,10 @@
         <div class="row"><!--Row Button & Quotes-->
             <div class="col-md-12">
                <br>
-                <button onClick="genQuote()" class="btn btn-default center-block" type="Submit">Shiny New Quote</button>
+                <button id="genButton" onClick="genQuote()" class="btn btn-default center-block" type="Submit">Shiny New Quote</button>
                 <br>
-                <button class="twitter-share-button center-block"><a class="twitter-share-button" href="https://twitter.com/intent/tweet" target="_blank"><i class="fa fa-twitter"></i>Tweet this Quote!</a></button>
+                <button id="tweet-button" class="twitter-share-button center-block"><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" target="_blank"><i class="fa fa-twitter"></i>Tweet this Quote!</a></button>
+
 
                 <br>
             </div><!--END Column Button & Qu otes-->
@@ -83,7 +86,6 @@
     <br>
 </section><!--END Section Footer-->
 
-    <script text="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 
